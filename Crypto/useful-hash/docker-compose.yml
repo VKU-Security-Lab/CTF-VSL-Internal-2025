@@ -1,0 +1,11 @@
+name: useful-hash
+services:
+  server:
+    build: 
+      context: .
+    working_dir: /app
+    environment:
+      - FLAG=VSL{b0db509a771453284ad8ceba41701ea2}
+    ports:
+      - 1337
+    restart: always
