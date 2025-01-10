@@ -1,0 +1,11 @@
+name: information
+services:
+  server:
+    build: 
+      context: .
+    working_dir: /app
+    environment:
+      - FLAG=VSL{423bb37231ee449a0341986c793a0f8d}
+    ports:
+      - 1337
+    restart: always
