@@ -11,6 +11,12 @@ struct user {
     int role;
 };
 
+void win() {
+    printf("You win!\n");
+    fflush(stdout);
+    system("/bin/sh");
+}
+
 int main(int argc, char *argv[]) {
     struct user u;
     u.role = GUEST_ID;
