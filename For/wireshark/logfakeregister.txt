@@ -1,0 +1,5 @@
+192.168.25.1 - - [12/Jan/2025 02:21:55] "GET http://localhost:8080/register HTTP/1.1" 200 - "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+192.168.25.1 - - [12/Jan/2025 02:22:45] "POST http://localhost:8080/processRegister HTTP/1.1" 200 - "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+192.168.25.1 - - [12/Jan/2025 02:22:45] POST http://localhost:8080/processRegister 200 - name=user123&email=user123%40imail.edu.vn&username=user123&password=user123 "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+192.168.25.1 - - [12/Jan/2025 02:24:28] code 501, message Unsupported method ('CONNECT') "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"
+192.168.25.1 - - [12/Jan/2025 02:24:28] "CONNECT spocs.getpocket.com:443 HTTP/1.1" 501 - "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0"

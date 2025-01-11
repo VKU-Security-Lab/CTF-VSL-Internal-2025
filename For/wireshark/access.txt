@@ -1,0 +1,4 @@
+2025-01-11 13:21:00.443107 - Method: POST, URL: http://localhost:1337/recover
+Data: username=admin&question=flag&answer=flag
+2025-01-11 13:21:37.556503 - Method: POST, URL: http://localhost:1337/recover
+Data: username=admin&question=flag&answer=flag
