@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  libpwn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8332:1337"
+    restart: always
