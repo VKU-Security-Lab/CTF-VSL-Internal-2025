@@ -9,9 +9,9 @@ def random_bytes(length):
 key_length = 16  
 num_keys = 5   
 K_main = random_bytes(key_length)
+#example: output = b'\x0bT\x99l\xa0D\xf9\xee\xd5\xfd\xda\xd8\xb4\xc9\xa8\xf8<--- this key\xfc\xe3E\xde\x19...'
+#=> key = b'\x0bT\x99l\xa0D\xf9\xee\xd5\xfd\xda\xd8\xb4\xc9\xa8\xf8'
 K_main_enc=K_main + b'<--- this key'
-
-
 p = getPrime(1024) 
 e = 65537
 while (p - 1) % e == 0:
@@ -29,12 +29,11 @@ scrambled_keys= [pow(K_main_enc, e, n) for n in Number]
 Number = [N + int(os.urandom(32).hex(), 16) for N in Number]
 random.shuffle(Number)
 
-
-plaintext = b"VSL{AES_and_crypto_is_not_easy!!!}"
+plaintext = b"VSL{???}"
 cipher = AES.new(K_main, AES.MODE_CBC)
 ciphertext = cipher.encrypt(pad(plaintext, AES.block_size))
-
 iv = cipher.iv
+#output file 
 print("Ciphertext (hex):", ciphertext.hex())
 print("IV (hex):", iv.hex())
 print("Scrambled keys =", [key for key in scrambled_keys])

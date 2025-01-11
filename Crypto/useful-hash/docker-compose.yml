@@ -7,5 +7,5 @@ services:
     environment:
       - FLAG=VSL{b0db509a771453284ad8ceba41701ea2}
     ports:
-      - 1337
+      - 2327:1337
     restart: always

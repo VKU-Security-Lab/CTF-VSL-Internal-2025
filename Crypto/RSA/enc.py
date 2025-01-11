@@ -2,7 +2,7 @@ from Crypto.Util import number
 from Crypto.Util.number import bytes_to_long, long_to_bytes
 p = number.getPrime(128)
 q = number.getPrime(128)
-flag = b'vsl{RSA_1s_5o_3a5y_h3h3!!}'
+flag = b'vsl{fake_flag}'
 n = p * q
 phi_n = (p - 1) * (q - 1)
 
