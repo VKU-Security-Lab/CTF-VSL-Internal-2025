@@ -8,6 +8,8 @@ COPY src/bofbegin .
 COPY src/flag.txt .
 COPY entry.sh /entry.sh
 
+RUN sed -i 's/\r//' /entry.sh
+
 RUN chmod +x bofbegin
 RUN chmod 444 flag.txt
 RUN chmod +x /entry.sh
